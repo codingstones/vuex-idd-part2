@@ -8,7 +8,7 @@
 
     <div class="content-panel__scroll" id="session-list-panel">
 
-      <h2 class="title error" v-if="loading">LOADING...</h2>
+      <spinner></spinner>
 
       <h2 class="error" v-if="error">SERVER FAKE ERROR: {{ error }} (Refresh until you get the sessions)</h2>
 

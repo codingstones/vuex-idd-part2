@@ -5,7 +5,11 @@
 </template>
 
 <script>
+import Vue from 'vue';
 import { store } from './vuex/store';
+import Spinner from './components/Spinner';
+
+Vue.component('spinner', Spinner)
 
 export default {
   name: 'app',
