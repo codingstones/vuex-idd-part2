@@ -10,7 +10,7 @@
 
       <spinner></spinner>
 
-      <h2 class="error" v-if="error">SERVER FAKE ERROR: {{ error }} (Refresh until you get the sessions)</h2>
+      <error-modal></error-modal>
 
       <div class="session-list">
         <div class='session-list__item'
@@ -33,7 +33,6 @@
         </div>
       </div>
     </div>
-
 
     <div class="content-panel__footer">
     </div>
