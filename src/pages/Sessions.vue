@@ -4,6 +4,9 @@
       <div class="title">
         <h3>SESSIONS</h3>
       </div>
+      <div class="actions">
+        <router-link id='new-session' class="button" :to="{ name: 'new-session' }">New Session</router-link>
+      </div>
     </div>
 
     <div class="content-panel__scroll" id="session-list-panel">
