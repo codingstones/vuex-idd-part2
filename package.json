@@ -12,7 +12,7 @@
     "test": "npm run e2e",
     "lint": "eslint --ext .js,.vue src test/e2e/specs",
     "unit": "mocha --compilers js:babel-register --require babel-polyfill --recursive 'src/{,!(router)/**/*}.js'",
-    "avoriaz": "mocha-webpack --webpack-config build/webpack.base.conf.js --watch test --recursive"
+    "avoriaz": "mocha-webpack --webpack-config build/webpack.base.conf.js 'src/**/*.avoriaz.js' --watch --recursive --require test/.setup.js"
   },
   "dependencies": {
     "foundation-sites": "^6.3.1",
